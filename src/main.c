@@ -9,8 +9,8 @@
  
 /*=====[Inclusion of own header]=============================================*/
 
-#include "alumnos.h"
 #include <stdio.h>
+#include "../inc/alumnos.h"
 
 /*=====[Inclusions of private function dependencies]=========================*/
 

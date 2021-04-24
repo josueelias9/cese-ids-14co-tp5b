@@ -9,9 +9,10 @@
  
 /*=====[Inclusion of own header]=============================================*/
 
-#include "alumnos.h"
 #include <stdio.h>
 #include <string.h>
+#include "../inc/alumnos.h"
+
 
 /*=====[Inclusions of private function dependencies]=========================*/
 
@@ -25,16 +26,30 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+
+/** \brief Datos del docente Esteban Volentini
+ */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/** \brief Datos del alumno Josue Huaman
+ */
+static const struct alumno_s JOSUE_HUAMAN = {
+    .apellidos = "HUAMAN",
+    .nombres = "Josue Elias",
+    .documento = "99.999.999",
+};
+/** \brief Array de punteros a las constantes de los alumnos
+ */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
+    &JOSUE_HUAMAN,
 };
-
+/** \brief Constante de tipo int para calcular la cantidad de alumnos
+ */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/

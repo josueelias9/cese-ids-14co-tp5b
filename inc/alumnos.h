@@ -39,8 +39,22 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/** \brief función SerializarALumno
+ * Esta funcion recibe informacion del alumno y crea la cadena.
+ * @param cadena puntero a string donde se guardan los datos del alumno.
+ * @param espacio entero sin signo.
+ * @param alumno variable de estructura alumno_s
+ * @return TRUE o FALSE
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+
+/** \brief función SerializarAlumnos
+ * Esta funcion crea una cedena con la informacion de todos los alumnos.
+ * @param cadena puntero a string donde se guardan los datos del alumno.
+ * @param espacio entero sin signo.
+ * @return TRUE o FALSE
+ */
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
